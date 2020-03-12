@@ -2,7 +2,6 @@ package com.adam.pages;
 
 import com.adam.pages.core.PageSupportAssertion;
 import lombok.Getter;
-import org.junit.rules.ExpectedException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
