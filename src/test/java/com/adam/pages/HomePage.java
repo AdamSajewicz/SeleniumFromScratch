@@ -25,7 +25,7 @@ public class HomePage extends PageSupportAssertion {
 
     public MappCloudPage navigateToMappCloudPage(){
         learnMoreAboutMappCloudButton.click();
-        waitForPageToLoad();
+        //waitForPageToLoad();
         return new MappCloudPage(getDriver(), null);
     }
 
