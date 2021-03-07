@@ -3,7 +3,7 @@ package com.adam.pages.core;
 import com.adam.assertions.core.AbstractAssertion;
 import org.openqa.selenium.WebDriver;
 
-public class PageSupportAssertion extends CorePage {
+public class PageSupportAssertion extends Page {
 
     protected PageSupportAssertion(WebDriver driver, String url) {
         super(driver, url);
@@ -22,7 +22,7 @@ public class PageSupportAssertion extends CorePage {
      * @param <T>
      * @return
      */
-    public <G extends CorePage, T extends AbstractAssertion<G>> T check(Class<T> clazz) {
+    public <G extends Page, T extends AbstractAssertion<G>> T check(Class<T> clazz) {
         AbstractAssertion<G> assertion = null;
         try{
            assertion = clazz.newInstance();

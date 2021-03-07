@@ -1,6 +1,6 @@
 package com.adam.assertions.core;
 
-import com.adam.pages.core.CorePage;
+import com.adam.pages.core.Page;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
@@ -9,7 +9,7 @@ import org.apache.commons.logging.LogFactory;
  *
  * @param <T>
  */
-public abstract class AbstractAssertion<T extends CorePage> {
+public abstract class AbstractAssertion<T extends Page> {
 
     protected T page;
     protected static final Log logger = LogFactory.getLog(AbstractAssertion.class);

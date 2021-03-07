@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b621a727-14f2-4324-a83d-40c4383dfc8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adam/assertions/HomePageAssertions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adam/assertions/HomePageAssertions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adam/assertions/core/AbstractAssertion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adam/assertions/core/AbstractAssertion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adam/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adam/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adam/pages/core/CorePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adam/pages/core/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adam/pages/core/PageSupportAssertion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adam/pages/core/PageSupportAssertion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adam/tests/MappCloudPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adam/tests/MappCloudPageRootTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adam/tests/MappHomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adam/tests/MappHomePageRootTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adam/tests/core/CoreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adam/tests/core/RootTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,6 +221,7 @@
     <property name="LombokPluginIS_VAL_Enabled" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunManager">
@@ -238,7 +244,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MappHomePageTest" type="TestNG" nameIsGenerated="true">
+    <configuration name="MappHomePageRootTest" type="TestNG" nameIsGenerated="true">
       <module name="Test" />
       <shortenClasspath name="CLASSPATH_FILE" />
       <extension name="coverage">
@@ -249,7 +255,7 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="com.adam.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.adam.tests.MappHomePageTest" />
+      <option name="MAIN_CLASS_NAME" value="com.adam.tests.MappHomePageRootTest" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="PARAMETERS" value="" />

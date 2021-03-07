@@ -1,16 +1,15 @@
 package com.adam.pages.core;
 
+//import com.thoughtworks.selenium.webdriven.commands.WaitForPageToLoad;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
-import com.thoughtworks.selenium.webdriven.commands.WaitForPageToLoad;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
-public abstract class CorePage {
-    public WebDriver driver;
-    public WebDriverWait wait;
+public abstract class Page {
+    private final WebDriver driver;
+    private final WebDriverWait wait;
 
     /**
      * Initializer of a page. Uses the AjaxElementLocatorFactory for lazy initialization of elements.
@@ -19,7 +18,7 @@ public abstract class CorePage {
      * @param driver
      * @param url
      */
-    protected CorePage(WebDriver driver, String url){
+    protected Page(WebDriver driver, String url){
         this.driver = driver;
         //AjaxElementLocatorFactory ajaxFactory = new AjaxElementLocatorFactory(driver, 10);
         driver.navigate().to(url);
@@ -28,9 +27,17 @@ public abstract class CorePage {
         wait = new WebDriverWait(driver, 5);
     }
 
-    public void waitForPageToLoad(){
-        WaitForPageToLoad wait = new WaitForPageToLoad();
-        wait.setTimeToWait(15000);
+//    public void waitForPageToLoad(){
+//        WaitForPageToLoad wait = new WaitForPageToLoad();
+//        wait.setTimeToWait(15000);
+//    }
+    
+    public WebDriver getDriver() {
+        return driver;
+    }
+    
+    public WebDriverWait getWait() {
+        return wait;
     }
 }
 

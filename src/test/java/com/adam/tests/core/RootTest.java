@@ -7,22 +7,22 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-public abstract class CoreTest {
-    protected WebDriver driver;
-    private Log log = LogFactory.getLog(getClass());
-    private static final String GECKO_DRIVER_PATH = "c:\\geckodriver\\geckodriver.exe";
+public abstract class RootTest {
+    private WebDriver driver;
+    private final Log log = LogFactory.getLog(getClass());
+    private static final String GECKO_DRIVER_PATH = "/home/adam/Selenium/geckodriver";
 
     @BeforeMethod(alwaysRun = true)
     public void setUpDriver(){
-        if(driver != null){
+        if(getDriver() != null){
             stopSelenium();
         }
         startSelenium();
-        driver.manage().deleteAllCookies();
+        getDriver().manage().deleteAllCookies();
         setupTest();
     }
 
-    public void startSelenium(){
+    private void startSelenium(){
         createNewDriverInstance();
     }
 
@@ -32,12 +32,12 @@ public abstract class CoreTest {
     }
 
     protected void maximizeBrowser(){
-        driver.manage().window().maximize();
+        getDriver().manage().window().maximize();
     }
 
     public void stopSelenium() {
-        if (driver != null) {
-            driver.quit();
+        if (getDriver() != null) {
+            getDriver().quit();
             log.info("Killing webdriver instance");
         }
     }
@@ -55,5 +55,8 @@ public abstract class CoreTest {
         cleanAfterTest();
         stopSelenium();
     }
-
+    
+    public WebDriver getDriver() {
+        return driver;
+    }
 }

@@ -26,11 +26,11 @@ public class HomePage extends PageSupportAssertion {
     public MappCloudPage navigateToMappCloudPage(){
         learnMoreAboutMappCloudButton.click();
         waitForPageToLoad();
-        return new MappCloudPage(driver, null);
+        return new MappCloudPage(getDriver(), null);
     }
 
     public HomePage waitForHomePageToLoad(){
-        wait.until(ExpectedConditions.visibilityOf(breakAwayImg));
+        getWait().until(ExpectedConditions.visibilityOf(breakAwayImg));
         return this;
     }
 }
