@@ -14,11 +14,11 @@ public abstract class RootTest {
 
     @BeforeMethod(alwaysRun = true)
     public void setUpDriver(){
-        if(getDriver() != null){
+        if(driver != null){
             stopSelenium();
         }
         startSelenium();
-        getDriver().manage().deleteAllCookies();
+        driver.manage().deleteAllCookies();
         setupTest();
     }
 
@@ -32,12 +32,12 @@ public abstract class RootTest {
     }
 
     protected void maximizeBrowser(){
-        getDriver().manage().window().maximize();
+        driver.manage().window().maximize();
     }
 
     public void stopSelenium() {
-        if (getDriver() != null) {
-            getDriver().quit();
+        if (driver != null) {
+            driver.quit();
             log.info("Killing webdriver instance");
         }
     }
