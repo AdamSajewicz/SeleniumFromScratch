@@ -1,6 +1,5 @@
 package com.adam.pages.core;
 
-//import com.thoughtworks.selenium.webdriven.commands.WaitForPageToLoad;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -20,17 +19,13 @@ public abstract class Page {
      */
     protected Page(WebDriver driver, String url){
         this.driver = driver;
-        //AjaxElementLocatorFactory ajaxFactory = new AjaxElementLocatorFactory(driver, 10);
-        driver.navigate().to(url);
+        if(url != null) {
+            driver.navigate().to(url);
+        }
         PageFactory.initElements(driver, this);
         driver.manage().timeouts().implicitlyWait(10000, TimeUnit.MILLISECONDS);
         wait = new WebDriverWait(driver, 5);
     }
-
-//    public void waitForPageToLoad(){
-//        WaitForPageToLoad wait = new WaitForPageToLoad();
-//        wait.setTimeToWait(15000);
-//    }
     
     public WebDriver getDriver() {
         return driver;
