@@ -1,6 +1,6 @@
 package com.adam.pages;
 
-import com.adam.pages.core.PageSupportAssertion;
+import com.adam.pages.core.PageSupportAssertions;
 import lombok.Getter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 @Getter
-public class ParaBankLoginPage extends PageSupportAssertion {
+public class ParaBankLoginPage extends PageSupportAssertions {
 
     @FindBy(xpath = "//input[@name='username']")
     public WebElement usernameField;

@@ -5,20 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b621a727-14f2-4324-a83d-40c4383dfc8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/adam/configuration/testconfiguration.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/adam/pages/ParaBankLoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/adam/tests/core/TestConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/adam/pages/core/PageSupportAssertions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/chromedriver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/adam/assertions/HomePageAssertions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adam/assertions/ParaBankLoginPageAssertions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/adam/assertions/MappCloudPageAssertions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adam/assertions/ParaBankHomePageAssertions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/adam/pages/HomePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/adam/pages/MappCloudPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adam/pages/ParaBankHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adam/assertions/ParaBankHomePageAssertions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adam/assertions/ParaBankHomePageAssertions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adam/assertions/ParaBankLoginPageAssertions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adam/assertions/ParaBankLoginPageAssertions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adam/assertions/core/AbstractAssertion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adam/assertions/core/AbstractAssertions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adam/configuration/testconfiguration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testconfiguration.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adam/pages/ParaBankHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adam/pages/ParaBankHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adam/pages/ParaBankLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adam/pages/ParaBankLoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/adam/pages/core/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adam/pages/core/Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/adam/tests/MappCloudPageRootTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adam/tests/LoginToParaBankTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/adam/tests/MappHomePageRootTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adam/tests/ParaBankHomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adam/pages/core/PageSupportAssertion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adam/tests/LoginToParaBankTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adam/tests/LoginToParaBankTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adam/tests/ParaBankHomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adam/tests/ParaBankHomePageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/adam/tests/core/RootTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adam/tests/core/RootTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/adam/assertions/ParaBankHomePageAssertions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/adam/assertions/ParaBankHomePageAssertions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/adam/assertions/ParaBankLoginPageAssertions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/adam/assertions/ParaBankLoginPageAssertions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/adam/assertions/core/AbstractAssertion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/adam/pages/ParaBankHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/adam/pages/ParaBankHomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/adam/pages/ParaBankLoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/adam/pages/ParaBankLoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/adam/pages/core/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/adam/pages/core/Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/adam/pages/core/PageSupportAssertion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/adam/tests/LoginToParaBankTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/adam/tests/LoginToParaBankTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/adam/tests/ParaBankHomePageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/adam/tests/ParaBankHomePageTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/adam/tests/core/RootTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/adam/tests/core/RootTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,6 +253,11 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet">
