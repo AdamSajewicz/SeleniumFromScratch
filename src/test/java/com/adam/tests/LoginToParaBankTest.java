@@ -11,9 +11,9 @@ public class LoginToParaBankTest extends RootTest {
 
     @Test
     public void shouldLoginAnUser(){
-        new ParaBankLoginPage(getDriver(), getTestConfig().getParaBankHome())
-                .fillInUserLogin(getTestConfig().getParaBankUser())
-                .fillInUserPassword(getTestConfig().getParaBankPass())
+        new ParaBankLoginPage(getDriver(), CONFIG.getParaBankHome())
+                .fillInUserLogin(CONFIG.getParaBankUser())
+                .fillInUserPassword(CONFIG.getParaBankPass())
                 .clickLogIn()
                 .waitForHomePageToLoad()
                 .check(ParaBankHomePageAssertions.class)

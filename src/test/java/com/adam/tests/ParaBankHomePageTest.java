@@ -8,6 +8,6 @@ public class ParaBankHomePageTest extends RootTest {
 
     @Test
     public void loadParaBankHomePage(){
-        new ParaBankLoginPage(getDriver(), getTestConfig().getParaBankHome());
+        new ParaBankLoginPage(getDriver(), CONFIG.getParaBankHome());
     }
 }

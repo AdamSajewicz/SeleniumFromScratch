@@ -1,12 +1,12 @@
 package com.adam.assertions;
 
-import com.adam.assertions.core.AbstractAssertion;
+import com.adam.assertions.core.AbstractAssertions;
 import com.adam.pages.ParaBankHomePage;
 
 import static org.testng.Assert.assertEquals;
 
 
-public class ParaBankHomePageAssertions extends AbstractAssertion<ParaBankHomePage> {
+public class ParaBankHomePageAssertions extends AbstractAssertions<ParaBankHomePage> {
 
     public ParaBankHomePageAssertions assertThatParaBankHomePageLoaded(String expectedTitleText){
         assertEquals(page.titleLabel.getText(), expectedTitleText, "Suprisingly the titleLabel text is different than expected");
