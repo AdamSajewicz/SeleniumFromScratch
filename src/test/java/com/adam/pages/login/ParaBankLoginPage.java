@@ -1,6 +1,7 @@
-package com.adam.pages;
+package com.adam.pages.login;
 
-import com.adam.pages.core.PageSupportAssertions;
+import com.adam.pages.core.ParaBankPage;
+import com.adam.pages.home.ParaBankHomePage;
 import lombok.Getter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,19 +9,19 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 @Getter
-public class ParaBankLoginPage extends PageSupportAssertions {
+public class ParaBankLoginPage extends ParaBankPage {
 
     @FindBy(xpath = "//input[@name='username']")
-    public WebElement usernameField;
+    private WebElement usernameField;
 
     @FindBy(xpath = "//input[@name='password']")
-    public WebElement passwordField;
+    private WebElement passwordField;
 
     @FindBy(xpath = "//input[@value='Log In']")
-    public WebElement loginButton;
+    private WebElement loginButton;
 
     public ParaBankLoginPage(WebDriver driver, String url){
-        super(driver, url);
+        super(driver);
     }
 
     public ParaBankLoginPage fillInUserLogin(String login){

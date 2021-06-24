@@ -3,4 +3,6 @@
     <paraBankHome>https://parabank.parasoft.com</paraBankHome>
     <paraBankUser>john</paraBankUser>
     <paraBankPass>demo</paraBankPass>
+    <paraBankUserFirstName>John</paraBankUserFirstName>
+    <paraBankUserLastName>Smith</paraBankUserLastName>
 </TestConfiguration>

@@ -1,7 +1,7 @@
-package com.adam.tests;
+package com.adam.tests.login;
 
-import com.adam.assertions.ParaBankHomePageAssertions;
-import com.adam.pages.ParaBankLoginPage;
+import com.adam.assertions.home.ParaBankHomePageAssertions;
+import com.adam.pages.login.ParaBankLoginPage;
 import com.adam.tests.core.RootTest;
 import org.testng.annotations.Test;
 
@@ -17,7 +17,9 @@ public class LoginToParaBankTest extends RootTest {
                 .clickLogIn()
                 .waitForHomePageToLoad()
                 .check(ParaBankHomePageAssertions.class)
-                .assertThatParaBankHomePageLoaded(TITLE_LABEL_TEXT)
+                .assertThatLoginPanelIsGone()
+                .assertThatWelcomeUserTextVisible(CONFIG.paraBankUserFirstName, CONFIG.paraBankUserLastName)
+                .assertThatAccountsOverviewVisible(TITLE_LABEL_TEXT)
                 .endAssertion();
     }
 }
