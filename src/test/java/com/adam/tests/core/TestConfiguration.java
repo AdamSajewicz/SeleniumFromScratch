@@ -7,4 +7,6 @@ public class TestConfiguration {
     public String paraBankHome;
     public String paraBankUser;
     public String paraBankPass;
+    public String paraBankUserFirstName;
+    public String paraBankUserLastName;
 }

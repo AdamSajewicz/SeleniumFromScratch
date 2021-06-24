@@ -55,8 +55,8 @@ public class PageSupportAssertions extends Page {
     /**
      * Method to wait for page document to have ready state.
      */
-    public void waitForPageLoad() {
-        getWait().until(driver -> (String.valueOf(((JavascriptExecutor) driver).executeScript("return document.readyState")).equals("complete")));
+    public void waitForPageToLoad() {
+        getWait().until(driver -> ("complete".equals(String.valueOf(((JavascriptExecutor) driver).executeScript("return document.readyState")))));
     }
     
     /**
@@ -83,7 +83,7 @@ public class PageSupportAssertions extends Page {
         fluentWait.until(driver -> {
             try {
                 driver.navigate().refresh();
-                waitForPageLoad();
+                waitForPageToLoad();
                 return condition.call();
             }
             catch(StaleElementReferenceException e) {
