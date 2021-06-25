@@ -32,7 +32,7 @@ public class ParaBankHomePage extends ParaBankPage {
     private WebElement readMoreNewsLink;
 
     ParaBankHomePage(WebDriver driver, String url){
-        super(driver);
+        super(driver, url);
     }
     
     public ParaBankHomePage(WebDriver driver){

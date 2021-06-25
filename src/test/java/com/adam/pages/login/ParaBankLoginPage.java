@@ -21,10 +21,11 @@ public class ParaBankLoginPage extends ParaBankPage {
     private WebElement loginButton;
 
     public ParaBankLoginPage(WebDriver driver, String url){
-        super(driver);
+        super(driver, url);
     }
 
     public ParaBankLoginPage fillInUserLogin(String login){
+        waitForPageToLoad();
         getWait().until(ExpectedConditions.visibilityOf(usernameField));
         usernameField.sendKeys(login);
         return this;

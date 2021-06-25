@@ -8,11 +8,15 @@ import org.openqa.selenium.support.FindBy;
 
 @Getter
 public class ParaBankNewsPage extends ParaBankPage {
-    public ParaBankNewsPage(WebDriver driver) {
-        super(driver);
+    public ParaBankNewsPage(WebDriver driver, String url) {
+        super(driver, url);
     }
     
-    @FindBy(xpath = "div[@id = rightPanel]//h1[. = 'ParaBank News']")
+    public ParaBankNewsPage(WebDriver driver) {
+        super(driver, null);
+    }
+    
+    @FindBy(xpath = "//h1[normalize-space()='ParaBank News']")
     private WebElement paraBankNewsLabel;
     
 }

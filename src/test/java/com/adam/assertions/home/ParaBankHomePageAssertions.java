@@ -16,7 +16,7 @@ public class ParaBankHomePageAssertions extends AbstractAssertions<ParaBankHomeP
     }
     
     public ParaBankHomePageAssertions assertThatWelcomeUserTextVisible(String firstName, String lastName){
-        assertEquals(page.getWelcomeTextElement().getText(), "<b>Welcome</b> " + firstName + ' ' + lastName, "Welcome small text is different!");
+        assertEquals(page.getWelcomeTextElement().getText(), "Welcome " + firstName + ' ' + lastName, "Welcome small text is different!");
         logger.info("Successfully verified that the welcome text is OK");
         return this;
     }
