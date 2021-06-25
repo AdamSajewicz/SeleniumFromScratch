@@ -7,8 +7,12 @@ import org.openqa.selenium.support.FindBy;
 
 @Getter
 public class ParaBankPage extends PageSupportAssertions{
+    protected ParaBankPage(WebDriver driver, String url) {
+        super(driver, url);
+    }
+    
     protected ParaBankPage(WebDriver driver) {
-        super(driver);
+        super(driver, null);
     }
     
     @FindBy(css = "li.home a[href*='index.htm']")

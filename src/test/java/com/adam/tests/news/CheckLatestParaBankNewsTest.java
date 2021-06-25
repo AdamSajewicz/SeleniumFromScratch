@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class CheckLatestParaBankNewsTest extends RootTest {
     @Test
-    public void loadParaBankHomePage(){
+    public void readMoreLatestNews(){
         new ParaBankLoginPage(getDriver(), CONFIG.getParaBankHome())
                 .fillInUserLogin(CONFIG.getParaBankUser())
                 .fillInUserPassword(CONFIG.getParaBankPass())
@@ -22,10 +22,5 @@ public class CheckLatestParaBankNewsTest extends RootTest {
                 .check(ParaBankNewsPageAssertions.class)
                 .assertThatLatestNewsLabelIsPresentOnPage()
                 .endAssertion();
-                
-                
-        
     }
-    
-    
 }
