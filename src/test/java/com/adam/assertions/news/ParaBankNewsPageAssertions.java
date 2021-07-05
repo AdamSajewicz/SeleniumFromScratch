@@ -8,8 +8,8 @@ import static org.testng.Assert.assertTrue;
 public class ParaBankNewsPageAssertions extends AbstractAssertions<ParaBankNewsPage> {
     
     public ParaBankNewsPageAssertions assertThatLatestNewsLabelIsPresentOnPage(){
-        assertTrue(page.getParaBankNewsLabel().isDisplayed(), "Surprisingly there is no 'Latest News' labal!");
-        logger.info("Successfully verified that the 'Latest News' Label is displayed");
+        assertTrue(page.getParaBankNewsLabel().isDisplayed(), "Surprisingly there is no 'ParaBank News' labal!");
+        logger.info("Successfully verified that the 'ParaBank News' Label is displayed");
         return this;
     }
 }

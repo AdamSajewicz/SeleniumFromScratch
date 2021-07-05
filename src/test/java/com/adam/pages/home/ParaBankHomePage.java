@@ -1,5 +1,6 @@
 package com.adam.pages.home;
 
+import com.adam.pages.accounts.ParaBankAccountsOverviewPage;
 import com.adam.pages.news.ParaBankNewsPage;
 import com.adam.pages.core.ParaBankPage;
 import lombok.Getter;
@@ -30,6 +31,9 @@ public class ParaBankHomePage extends ParaBankPage {
     
     @FindBy(xpath = "//div[@id = 'rightPanel']//a[contains(@href, 'news.htm')]")
     private WebElement readMoreNewsLink;
+    
+    @FindBy(xpath = "//a[. = 'Accounts Overview']")
+    private WebElement accountsOverviewMenuOption;        
 
     ParaBankHomePage(WebDriver driver, String url){
         super(driver, url);
@@ -55,5 +59,11 @@ public class ParaBankHomePage extends ParaBankPage {
         getWait().until(ExpectedConditions.elementToBeClickable(readMoreNewsLink));
         readMoreNewsLink.click();
         return new ParaBankNewsPage(getDriver());
+    }
+    
+    public ParaBankAccountsOverviewPage openAccountsOverviewPage(){
+        getWait().until(ExpectedConditions.elementToBeClickable(accountsOverviewMenuOption));
+        accountsOverviewMenuOption.click();
+        return new ParaBankAccountsOverviewPage(getDriver());
     }
 }
